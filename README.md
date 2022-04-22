@@ -1,4 +1,4 @@
-# Python Basic Doodle
+# Python Basics Doodle
 Learning the Python language, concepts and best practices.<br>
 
 ## Gains
