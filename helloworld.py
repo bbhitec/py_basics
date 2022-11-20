@@ -63,7 +63,7 @@ def main():
     func1()
     print (func1())
     print (func1)   #[mst] will return None since no return value
-    print (f'power(2, 3) = {power(x=3, num=2)}') # explicit parameter targeting
+    print (f'power(2, 3) = {power(x=3, num=2):_>8}') # explicit parameter targeting (this is an f-string with padding configuration)
 
     someFunction()
     print (f)
