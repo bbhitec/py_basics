@@ -75,6 +75,13 @@ def main():
     c2.method1()
     c2.method2()
     
+    # basic STDIN input readout
+    n = int(input())    
+    
+    # range boudaries definitions
+    for i in range(1,n+1):
+        print(i, end='')
+    
 
 
 # Global vs. local variables in functions
