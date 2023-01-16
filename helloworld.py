@@ -24,7 +24,7 @@ class anotherClass(myClass): # [mst] inherited
         print ("anotherClass method2")
         
     def method1(self):
-        myClass.method1(self);
+        myClass.method1(self)
         print ("anotherClass method1")
     
 
@@ -43,7 +43,7 @@ def power(num, x=1):
 
 #function with variable number of arguments
 def multi_add(*args):
-    result = 0;
+    result = 0
     for x in args:
         result = result + x
     return result
