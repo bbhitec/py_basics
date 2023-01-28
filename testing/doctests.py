@@ -2,7 +2,7 @@
  [mst] doctests.py
  demonstrating doctests
  based on entries in the enki app
- 
+
  log:
  -2021.01: -initial draft
 
@@ -15,7 +15,8 @@ import doctest
 
 def multiply(a,b):
     # this is the syntax to define a doctest
-    # this should be run via the shell as 'python <module_name>' and can be verbosed by adding '-v'
+    # this should be run via the shell as 'python <module_name>'
+    # and can be verbosed by adding '-v'
     """
     Test custom stuff:
     >>> multiply(3,3)

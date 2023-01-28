@@ -1,4 +1,4 @@
-# [mst] timedate.py 
+# [mst] timedate.py
 # working with dates
 # based on the lynda.com 'Learning Python' course
 #
@@ -23,8 +23,8 @@ today = datetime.now()
 print  ("The current date and time is ", today)
 
 # weekday returns 0 (monday) through 6 (sunday)
-wd = date.weekday(today)  
-# Days start at 0 for Monday 
+wd = date.weekday(today)
+# Days start at 0 for Monday
 days = ["monday","tuesday","wednesday","thursday","friday","saturday","sunday"]
 print ("Today is day number %d" % wd)
 print ("Which is a " + days[wd])
@@ -57,7 +57,7 @@ if afd < today:
     print ("April Fool's day already went by %d days ago" % ((today-afd).days))
     afd = afd.replace(year=today.year + 1)  # if so, get the date for next year
 
-# Now calculate the amount of time until April Fool's Day  
+# Now calculate the amount of time until April Fool's Day
 time_to_afd = abs(afd - today)
 print (time_to_afd.days, "days until next April Fools' Day!")
 
@@ -82,7 +82,7 @@ print (str2)
 
 print ("listing all first Fridays of each month...")
 cal = calendar.TextCalendar(calendar.MONDAY)
-for month in range(datetime.now().month,13):    
+for month in range(datetime.now().month,13):
     for i in cal.itermonthdays(2020, month):
         if i!=0:    # [mst] ignore pad-zero-days
             curr_day = date(2020, month, i)
@@ -93,11 +93,11 @@ for month in range(datetime.now().month,13):
 
 
 # [demo] various
-# enumerate will will zip an index to a list member                
+# enumerate will will zip an index to a list member
 for i, j in enumerate (days):
     print (i, j)
 
-# # [demo] help will list the possible actions over an object    
+# # [demo] help will list the possible actions over an object
 # help(["foo", "bar", "baz"])
 
 

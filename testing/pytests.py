@@ -2,10 +2,10 @@
  [mst] pytests.py
  demonstrating pytests
  based on entries in the enki app
- 
+
  log:
  -2021.01: -initial draft
- 
+
 Created on Jan 29, 2021
 @author: mst
 '''
@@ -19,4 +19,4 @@ def test_one():
 
 def test_two():
     assert mult(g,2) == "gg"
-    
+

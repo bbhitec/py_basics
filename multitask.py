@@ -1,5 +1,5 @@
 #
-# [mst] multitask.py 
+# [mst] multitask.py
 # playing around with multitasking
 #
 # log:

@@ -29,4 +29,3 @@ if __name__ == ("__main__"):
         print(mult(int(arg1),arg2))
     else:
         print ("USAGE: arg1 must be a digit")
-    

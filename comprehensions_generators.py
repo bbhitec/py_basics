@@ -1,4 +1,4 @@
-# 
+#
 # [mst] comprehensions_generators.py
 # simple python comprehenshions and generators doodle
 # - initial: comprehenshions, lamda functions
@@ -70,7 +70,7 @@ my_gen = gen_func(nums)
 
 for i in my_gen:
     print (i)
-    
+
 # a generator object is made to iterate through. it is not stored in the memory
 x = (i for i in range(5))
 print (x)   # this will print a pointer to a generator object
