@@ -4,6 +4,11 @@ Learning the Python language, concepts and best practices.<br>
 ## Gains
 - Basics of Python: syntax, structure
 - Core concepts: generators, comprehensions, lambda functions, OOP, multitasking, parsers
+- File operations
+- HTML parsing
+- Testing
+
+<br>
 
 #### Skills stack
 ![Python (v3)](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white)

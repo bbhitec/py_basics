@@ -14,7 +14,7 @@ from multiply import mult
 
 def test_one():
     # python has a more intelligent assertion handling than the unittest lib
-    # this shoul be run with "pytest <module_name.py>"
+    # this should be run with "pytest <module_name.py>"
     assert mult(3,3) == 9
 
 def test_two():

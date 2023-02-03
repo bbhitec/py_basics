@@ -14,6 +14,7 @@ def main():
     # Open a file for writing (the '+' will create it if it doesn't exist)
     # the files functionality is built into python (no special import)
     #f = open(fname,"w+")
+
     # [bp] using 'with' will close the file even if there is an exception
     #       before closing explicitly
     with open(fname, 'w+') as f:

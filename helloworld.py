@@ -15,7 +15,7 @@ log/gains:
  @version 0.1 2021
 """
 
-
+from datetime import date
 
 # [demo] classes and inheritance
 class myClass():
@@ -94,6 +94,37 @@ def func_and_classes():
     c2.method2()
 
 
+# class v sstatic method:
+# -static methods can be accessed without an instance, usually utility functions
+# -class methods create factory methods that return class objects (similar to constructor overloading) for different use cases.
+#
+# based on: https://www.geeksforgeeks.org/class-method-vs-static-method-python/
+#
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    # a class method to create a Person object by birth year.
+    @classmethod
+    def fromBirthYear(cls, name, year):
+        return cls(name, date.today().year - year)
+
+    # a static method to check if a Person is adult or not.
+    @staticmethod
+    def isAdult(age):
+        return age > 18
+
+def static_class_methods():
+    person1 = Person('mayank', 21)
+    person2 = Person.fromBirthYear('mayank', 1996)
+
+    print(person1.age)
+    print(person2.age)
+
+    # print the result
+    print(Person.isAdult(22))
+
 
 
 
@@ -122,13 +153,14 @@ def main():
 
 
 
-
-    # basic aspects testing:
+    ## basic aspects testing:
+    ###########################
 
     # func_and_classes()
     # scopes()
     # arrays()
     # inputs()
+    static_class_methods()
 
 
 
